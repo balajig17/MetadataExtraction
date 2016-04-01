@@ -4,6 +4,21 @@
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
         <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css" />
         <link rel="stylesheet" href="css/styles.css">
+        <style>
+    body {
+        font-family:"Lucida Grande","Droid Sans",Arial,Helvetica,sans-serif;
+    }
+    .legend {
+        border: 1px solid #555555;
+        border-radius: 5px 5px 5px 5px;
+        font-size: 0.8em;
+        margin: 10px;
+        padding: 8px;
+    }
+    .bld {
+        font-weight: bold;
+    }
+</style>
     </head>
     <body>
         <nav class="navbar navbar-default">
@@ -13,7 +28,7 @@
                </div>
                 <ul class="nav navbar-nav">
                     <li><a href="./index.html">Viz 1</a></li>
-                    <li class="active"><a href="./second.html">Viz 2</a></li>
+                    <li class="active"><a href="./second.html">Word Cloud</a></li>
                     <li><a href="./third.html">Viz 3</a></li>
                     <li><a href="./fourth.html">Viz 4</a></li>
                     <li><a href="./fifth.html">Viz 5</a></li>
@@ -22,7 +37,11 @@
             </div>
         </nav>
 <!--        Bootstrap and jQuery inclusion-->
+  <script src="js/d3.v3.min.js"></script>
+ <script src="js/d3.layout.cloud.js"></script>
+ <script src="js/cloud.js"></script>
   <script src="js/angular.min.js"></script>
    <script src="bootstrap/js/bootstrap.min.js"></script>
+   
     </body>
 </html>
