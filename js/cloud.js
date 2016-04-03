@@ -1,30 +1,24 @@
 
 
 var fill = d3.scale.category20();
+var layout="";
 
-var layout = d3.layout.cloud()
+
+
+d3.json("data/wordcloud.json",function(error,responseWords)
+{
+
+ layout= d3.layout.cloud()
     .size([1000, 1000])
-    .words([
-      "Hello", "world", "normally", "you", "want", "more", "words",
-      "than", "this","Hello", "world", "normally", "you", "want", "more", "words",
-      "than", "this","Hello", "world", "normally", "you", "want", "more", "words",
-      "than", "this","Hello", "world", "normally", "you", "want", "more", "words",
-      "than", "this","Hello", "world", "normally", "you", "want", "more", "words",
-      "than", "this","Hello", "world", "normally", "you", "want", "more", "words",
-      "than", "this","Hello", "world", "normally", "you", "want", "more", "words",
-      "than", "this","Hello", "world", "normally", "you", "want", "more", "words",
-      "than", "this","Hello", "world", "normally", "you", "want", "more", "words",
-      "than", "this","Hello", "world", "normally", "you", "want", "more", "words",
-      "than", "this"].map(function(d) {
-      return {text: d, size: 10 + Math.random() * 90, test: "haha"};
-    }))
+    .words(responseWords)
     .padding(5)
     .rotate(function() { return ~~(Math.random() * 2) * 90; })
     .font("Impact")
     .fontSize(function(d) { return d.size; })
     .on("end", draw);
-
 layout.start();
+});
+
 
 function draw(words) {
   d3.select("body").append("svg")
