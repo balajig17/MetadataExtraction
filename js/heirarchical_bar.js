@@ -5,7 +5,7 @@ var margin = {top: 30, right: 60, bottom: 0, left: 120},
 var x = d3.scale.linear()
     .range([0, width]);
 
-var barHeight = 20;
+var barHeight = 12;
 
 var color = d3.scale.ordinal()
     .range(["steelblue", "#ccc"]);

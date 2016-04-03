@@ -1,380 +1,954 @@
 {
- "name": "flare",
- "children": [
-  {
-   "name": "analytics",
-   "children": [
-    {
-     "name": "cluster",
-     "children": [
-      {"name": "AgglomerativeCluster", "size": 3938},
-      {"name": "CommunityStructure", "size": 3812},
-      {"name": "HierarchicalCluster", "size": 6714},
-      {"name": "MergeEdge", "size": 743}
-     ]
-    },
-    {
-     "name": "graph",
-     "children": [
-      {"name": "BetweennessCentrality", "size": 3534},
-      {"name": "LinkDistance", "size": 5731},
-      {"name": "MaxFlowMinCut", "size": 7840},
-      {"name": "ShortestPaths", "size": 5914},
-      {"name": "SpanningTree", "size": 3416}
-     ]
-    },
-    {
-     "name": "optimization",
-     "children": [
-      {"name": "AspectRatioBanker", "size": 7074}
-     ]
-    }
-   ]
-  },
-  {
-   "name": "animate",
-   "children": [
-    {"name": "Easing", "size": 17010},
-    {"name": "FunctionSequence", "size": 5842},
-    {
-     "name": "interpolate",
-     "children": [
-      {"name": "ArrayInterpolator", "size": 1983},
-      {"name": "ColorInterpolator", "size": 2047},
-      {"name": "DateInterpolator", "size": 1375},
-      {"name": "Interpolator", "size": 8746},
-      {"name": "MatrixInterpolator", "size": 2202},
-      {"name": "NumberInterpolator", "size": 1382},
-      {"name": "ObjectInterpolator", "size": 1629},
-      {"name": "PointInterpolator", "size": 1675},
-      {"name": "RectangleInterpolator", "size": 2042}
-     ]
-    },
-    {"name": "ISchedulable", "size": 1041},
-    {"name": "Parallel", "size": 5176},
-    {"name": "Pause", "size": 449},
-    {"name": "Scheduler", "size": 5593},
-    {"name": "Sequence", "size": 5534},
-    {"name": "Transition", "size": 9201},
-    {"name": "Transitioner", "size": 19975},
-    {"name": "TransitionEvent", "size": 1116},
-    {"name": "Tween", "size": 6006}
-   ]
-  },
-  {
-   "name": "data",
-   "children": [
-    {
-     "name": "converters",
-     "children": [
-      {"name": "Converters", "size": 721},
-      {"name": "DelimitedTextConverter", "size": 4294},
-      {"name": "GraphMLConverter", "size": 9800},
-      {"name": "IDataConverter", "size": 1314},
-      {"name": "JSONConverter", "size": 2220}
-     ]
-    },
-    {"name": "DataField", "size": 1759},
-    {"name": "DataSchema", "size": 2165},
-    {"name": "DataSet", "size": 586},
-    {"name": "DataSource", "size": 3331},
-    {"name": "DataTable", "size": 772},
-    {"name": "DataUtil", "size": 3322}
-   ]
-  },
-  {
-   "name": "display",
-   "children": [
-    {"name": "DirtySprite", "size": 8833},
-    {"name": "LineSprite", "size": 1732},
-    {"name": "RectSprite", "size": 3623},
-    {"name": "TextSprite", "size": 10066}
-   ]
-  },
-  {
-   "name": "flex",
-   "children": [
-    {"name": "FlareVis", "size": 4116}
-   ]
-  },
-  {
-   "name": "physics",
-   "children": [
-    {"name": "DragForce", "size": 1082},
-    {"name": "GravityForce", "size": 1336},
-    {"name": "IForce", "size": 319},
-    {"name": "NBodyForce", "size": 10498},
-    {"name": "Particle", "size": 2822},
-    {"name": "Simulation", "size": 9983},
-    {"name": "Spring", "size": 2213},
-    {"name": "SpringForce", "size": 1681}
-   ]
-  },
-  {
-   "name": "query",
-   "children": [
-    {"name": "AggregateExpression", "size": 1616},
-    {"name": "And", "size": 1027},
-    {"name": "Arithmetic", "size": 3891},
-    {"name": "Average", "size": 891},
-    {"name": "BinaryExpression", "size": 2893},
-    {"name": "Comparison", "size": 5103},
-    {"name": "CompositeExpression", "size": 3677},
-    {"name": "Count", "size": 781},
-    {"name": "DateUtil", "size": 4141},
-    {"name": "Distinct", "size": 933},
-    {"name": "Expression", "size": 5130},
-    {"name": "ExpressionIterator", "size": 3617},
-    {"name": "Fn", "size": 3240},
-    {"name": "If", "size": 2732},
-    {"name": "IsA", "size": 2039},
-    {"name": "Literal", "size": 1214},
-    {"name": "Match", "size": 3748},
-    {"name": "Maximum", "size": 843},
-    {
-     "name": "methods",
-     "children": [
-      {"name": "add", "size": 593},
-      {"name": "and", "size": 330},
-      {"name": "average", "size": 287},
-      {"name": "count", "size": 277},
-      {"name": "distinct", "size": 292},
-      {"name": "div", "size": 595},
-      {"name": "eq", "size": 594},
-      {"name": "fn", "size": 460},
-      {"name": "gt", "size": 603},
-      {"name": "gte", "size": 625},
-      {"name": "iff", "size": 748},
-      {"name": "isa", "size": 461},
-      {"name": "lt", "size": 597},
-      {"name": "lte", "size": 619},
-      {"name": "max", "size": 283},
-      {"name": "min", "size": 283},
-      {"name": "mod", "size": 591},
-      {"name": "mul", "size": 603},
-      {"name": "neq", "size": 599},
-      {"name": "not", "size": 386},
-      {"name": "or", "size": 323},
-      {"name": "orderby", "size": 307},
-      {"name": "range", "size": 772},
-      {"name": "select", "size": 296},
-      {"name": "stddev", "size": 363},
-      {"name": "sub", "size": 600},
-      {"name": "sum", "size": 280},
-      {"name": "update", "size": 307},
-      {"name": "variance", "size": 335},
-      {"name": "where", "size": 299},
-      {"name": "xor", "size": 354},
-      {"name": "_", "size": 264}
-     ]
-    },
-    {"name": "Minimum", "size": 843},
-    {"name": "Not", "size": 1554},
-    {"name": "Or", "size": 970},
-    {"name": "Query", "size": 13896},
-    {"name": "Range", "size": 1594},
-    {"name": "StringUtil", "size": 4130},
-    {"name": "Sum", "size": 791},
-    {"name": "Variable", "size": 1124},
-    {"name": "Variance", "size": 1876},
-    {"name": "Xor", "size": 1101}
-   ]
-  },
-  {
-   "name": "scale",
-   "children": [
-    {"name": "IScaleMap", "size": 2105},
-    {"name": "LinearScale", "size": 1316},
-    {"name": "LogScale", "size": 3151},
-    {"name": "OrdinalScale", "size": 3770},
-    {"name": "QuantileScale", "size": 2435},
-    {"name": "QuantitativeScale", "size": 4839},
-    {"name": "RootScale", "size": 1756},
-    {"name": "Scale", "size": 4268},
-    {"name": "ScaleType", "size": 1821},
-    {"name": "TimeScale", "size": 5833}
-   ]
-  },
-  {
-   "name": "util",
-   "children": [
-    {"name": "Arrays", "size": 8258},
-    {"name": "Colors", "size": 10001},
-    {"name": "Dates", "size": 8217},
-    {"name": "Displays", "size": 12555},
-    {"name": "Filter", "size": 2324},
-    {"name": "Geometry", "size": 10993},
-    {
-     "name": "heap",
-     "children": [
-      {"name": "FibonacciHeap", "size": 9354},
-      {"name": "HeapNode", "size": 1233}
-     ]
-    },
-    {"name": "IEvaluable", "size": 335},
-    {"name": "IPredicate", "size": 383},
-    {"name": "IValueProxy", "size": 874},
-    {
-     "name": "math",
-     "children": [
-      {"name": "DenseMatrix", "size": 3165},
-      {"name": "IMatrix", "size": 2815},
-      {"name": "SparseMatrix", "size": 3366}
-     ]
-    },
-    {"name": "Maths", "size": 17705},
-    {"name": "Orientation", "size": 1486},
-    {
-     "name": "palette",
-     "children": [
-      {"name": "ColorPalette", "size": 6367},
-      {"name": "Palette", "size": 1229},
-      {"name": "ShapePalette", "size": 2059},
-      {"name": "SizePalette", "size": 2291}
-     ]
-    },
-    {"name": "Property", "size": 5559},
-    {"name": "Shapes", "size": 19118},
-    {"name": "Sort", "size": 6887},
-    {"name": "Stats", "size": 6557},
-    {"name": "Strings", "size": 22026}
-   ]
-  },
-  {
-   "name": "vis",
-   "children": [
-    {
-     "name": "axis",
-     "children": [
-      {"name": "Axes", "size": 1302},
-      {"name": "Axis", "size": 24593},
-      {"name": "AxisGridLine", "size": 652},
-      {"name": "AxisLabel", "size": 636},
-      {"name": "CartesianAxes", "size": 6703}
-     ]
-    },
-    {
-     "name": "controls",
-     "children": [
-      {"name": "AnchorControl", "size": 2138},
-      {"name": "ClickControl", "size": 3824},
-      {"name": "Control", "size": 1353},
-      {"name": "ControlList", "size": 4665},
-      {"name": "DragControl", "size": 2649},
-      {"name": "ExpandControl", "size": 2832},
-      {"name": "HoverControl", "size": 4896},
-      {"name": "IControl", "size": 763},
-      {"name": "PanZoomControl", "size": 5222},
-      {"name": "SelectionControl", "size": 7862},
-      {"name": "TooltipControl", "size": 8435}
-     ]
-    },
-    {
-     "name": "data",
-     "children": [
-      {"name": "Data", "size": 20544},
-      {"name": "DataList", "size": 19788},
-      {"name": "DataSprite", "size": 10349},
-      {"name": "EdgeSprite", "size": 3301},
-      {"name": "NodeSprite", "size": 19382},
-      {
-       "name": "render",
-       "children": [
-        {"name": "ArrowType", "size": 698},
-        {"name": "EdgeRenderer", "size": 5569},
-        {"name": "IRenderer", "size": 353},
-        {"name": "ShapeRenderer", "size": 2247}
-       ]
-      },
-      {"name": "ScaleBinding", "size": 11275},
-      {"name": "Tree", "size": 7147},
-      {"name": "TreeBuilder", "size": 9930}
-     ]
-    },
-    {
-     "name": "events",
-     "children": [
-      {"name": "DataEvent", "size": 2313},
-      {"name": "SelectionEvent", "size": 1880},
-      {"name": "TooltipEvent", "size": 1701},
-      {"name": "VisualizationEvent", "size": 1117}
-     ]
-    },
-    {
-     "name": "legend",
-     "children": [
-      {"name": "Legend", "size": 20859},
-      {"name": "LegendItem", "size": 4614},
-      {"name": "LegendRange", "size": 10530}
-     ]
-    },
-    {
-     "name": "operator",
-     "children": [
-      {
-       "name": "distortion",
-       "children": [
-        {"name": "BifocalDistortion", "size": 4461},
-        {"name": "Distortion", "size": 6314},
-        {"name": "FisheyeDistortion", "size": 3444}
-       ]
-      },
-      {
-       "name": "encoder",
-       "children": [
-        {"name": "ColorEncoder", "size": 3179},
-        {"name": "Encoder", "size": 4060},
-        {"name": "PropertyEncoder", "size": 4138},
-        {"name": "ShapeEncoder", "size": 1690},
-        {"name": "SizeEncoder", "size": 1830}
-       ]
-      },
-      {
-       "name": "filter",
-       "children": [
-        {"name": "FisheyeTreeFilter", "size": 5219},
-        {"name": "GraphDistanceFilter", "size": 3165},
-        {"name": "VisibilityFilter", "size": 3509}
-       ]
-      },
-      {"name": "IOperator", "size": 1286},
-      {
-       "name": "label",
-       "children": [
-        {"name": "Labeler", "size": 9956},
-        {"name": "RadialLabeler", "size": 3899},
-        {"name": "StackedAreaLabeler", "size": 3202}
-       ]
-      },
-      {
-       "name": "layout",
-       "children": [
-        {"name": "AxisLayout", "size": 6725},
-        {"name": "BundledEdgeRouter", "size": 3727},
-        {"name": "CircleLayout", "size": 9317},
-        {"name": "CirclePackingLayout", "size": 12003},
-        {"name": "DendrogramLayout", "size": 4853},
-        {"name": "ForceDirectedLayout", "size": 8411},
-        {"name": "IcicleTreeLayout", "size": 4864},
-        {"name": "IndentedTreeLayout", "size": 3174},
-        {"name": "Layout", "size": 7881},
-        {"name": "NodeLinkTreeLayout", "size": 12870},
-        {"name": "PieLayout", "size": 2728},
-        {"name": "RadialTreeLayout", "size": 12348},
-        {"name": "RandomLayout", "size": 870},
-        {"name": "StackedAreaLayout", "size": 9121},
-        {"name": "TreeMapLayout", "size": 9191}
-       ]
-      },
-      {"name": "Operator", "size": 2490},
-      {"name": "OperatorList", "size": 5248},
-      {"name": "OperatorSequence", "size": 4190},
-      {"name": "OperatorSwitch", "size": 2581},
-      {"name": "SortOperator", "size": 2023}
-     ]
-    },
-    {"name": "Visualization", "size": 16540}
-   ]
-  }
- ]
+	"name": "flare",
+	"children": [{
+		"total_occurences": 2677,
+		"children": [{
+			"size": 1352,
+			"name": "#1"
+		}, {
+			"size": 384,
+			"name": "#2"
+		}, {
+			"size": 359,
+			"name": "#3"
+		}, {
+			"size": 336,
+			"name": "#4"
+		}, {
+			"size": 247,
+			"name": "#5"
+		}],
+		"name": "SCIENCE"
+	}, {
+		"total_occurences": 2463,
+		"children": [{
+			"size": 1049,
+			"name": "#1"
+		}, {
+			"size": 508,
+			"name": "#2"
+		}, {
+			"size": 355,
+			"name": "#3"
+		}, {
+			"size": 343,
+			"name": "#4"
+		}, {
+			"size": 209,
+			"name": "#5"
+		}],
+		"name": "ICE"
+	}, {
+		"total_occurences": 1815,
+		"children": [{
+			"size": 365,
+			"name": "#1"
+		}, {
+			"size": 423,
+			"name": "#2"
+		}, {
+			"size": 392,
+			"name": "#3"
+		}, {
+			"size": 329,
+			"name": "#4"
+		}, {
+			"size": 307,
+			"name": "#5"
+		}],
+		"name": "CLIMATE"
+	}, {
+		"total_occurences": 1726,
+		"children": [{
+			"size": 726,
+			"name": "#1"
+		}, {
+			"size": 296,
+			"name": "#2"
+		}, {
+			"size": 483,
+			"name": "#3"
+		}, {
+			"size": 98,
+			"name": "#4"
+		}, {
+			"size": 124,
+			"name": "#5"
+		}],
+		"name": "ATMOSPHERE"
+	}, {
+		"total_occurences": 1696,
+		"children": [{
+			"size": 603,
+			"name": "#1"
+		}, {
+			"size": 432,
+			"name": "#2"
+		}, {
+			"size": 162,
+			"name": "#3"
+		}, {
+			"size": 150,
+			"name": "#4"
+		}, {
+			"size": 350,
+			"name": "#5"
+		}],
+		"name": "OCEAN"
+	}, {
+		"total_occurences": 1551,
+		"children": [{
+			"size": 363,
+			"name": "#1"
+		}, {
+			"size": 312,
+			"name": "#2"
+		}, {
+			"size": 269,
+			"name": "#3"
+		}, {
+			"size": 352,
+			"name": "#4"
+		}, {
+			"size": 256,
+			"name": "#5"
+		}],
+		"name": "SURFACE"
+	}, {
+		"total_occurences": 1518,
+		"children": [{
+			"size": 115,
+			"name": "#1"
+		}, {
+			"size": 543,
+			"name": "#2"
+		}, {
+			"size": 404,
+			"name": "#3"
+		}, {
+			"size": 276,
+			"name": "#4"
+		}, {
+			"size": 181,
+			"name": "#5"
+		}],
+		"name": "VERSION"
+	}, {
+		"total_occurences": 1301,
+		"children": [{
+			"size": 282,
+			"name": "#1"
+		}, {
+			"size": 286,
+			"name": "#2"
+		}, {
+			"size": 329,
+			"name": "#3"
+		}, {
+			"size": 211,
+			"name": "#4"
+		}, {
+			"size": 194,
+			"name": "#5"
+		}],
+		"name": "WEATHER"
+	}, {
+		"total_occurences": 1237,
+		"children": [{
+			"size": 455,
+			"name": "#1"
+		}, {
+			"size": 412,
+			"name": "#2"
+		}, {
+			"size": 161,
+			"name": "#3"
+		}, {
+			"size": 118,
+			"name": "#4"
+		}, {
+			"size": 92,
+			"name": "#5"
+		}],
+		"name": "PREDICTION"
+	}, {
+		"total_occurences": 1230,
+		"children": [{
+			"size": 106,
+			"name": "#1"
+		}, {
+			"size": 241,
+			"name": "#2"
+		}, {
+			"size": 226,
+			"name": "#3"
+		}, {
+			"size": 342,
+			"name": "#4"
+		}, {
+			"size": 316,
+			"name": "#5"
+		}],
+		"name": "TEMPERATURE"
+	}, {
+		"total_occurences": 1092,
+		"children": [{
+			"size": 367,
+			"name": "#1"
+		}, {
+			"size": 297,
+			"name": "#2"
+		}, {
+			"size": 195,
+			"name": "#3"
+		}, {
+			"size": 125,
+			"name": "#4"
+		}, {
+			"size": 109,
+			"name": "#5"
+		}],
+		"name": "SPACE"
+	}, {
+		"total_occurences": 915,
+		"children": [{
+			"size": 173,
+			"name": "#1"
+		}, {
+			"size": 158,
+			"name": "#2"
+		}, {
+			"size": 199,
+			"name": "#3"
+		}, {
+			"size": 190,
+			"name": "#4"
+		}, {
+			"size": 196,
+			"name": "#5"
+		}],
+		"name": "STATE"
+	}, {
+		"total_occurences": 777,
+		"children": [{
+			"size": 51,
+			"name": "#1"
+		}, {
+			"size": 49,
+			"name": "#2"
+		}, {
+			"size": 60,
+			"name": "#3"
+		}, {
+			"size": 242,
+			"name": "#4"
+		}, {
+			"size": 376,
+			"name": "#5"
+		}],
+		"name": "RECORD"
+	}, {
+		"total_occurences": 735,
+		"children": [{
+			"size": 213,
+			"name": "#1"
+		}, {
+			"size": 329,
+			"name": "#2"
+		}, {
+			"size": 46,
+			"name": "#3"
+		}, {
+			"size": 91,
+			"name": "#4"
+		}, {
+			"size": 57,
+			"name": "#5"
+		}],
+		"name": "CONTINENT"
+	}, {
+		"total_occurences": 726,
+		"children": [{
+			"size": 66,
+			"name": "#1"
+		}, {
+			"size": 178,
+			"name": "#2"
+		}, {
+			"size": 165,
+			"name": "#3"
+		}, {
+			"size": 139,
+			"name": "#4"
+		}, {
+			"size": 179,
+			"name": "#5"
+		}],
+		"name": "COUNTRY"
+	}, {
+		"total_occurences": 714,
+		"children": [{
+			"size": 428,
+			"name": "#1"
+		}, {
+			"size": 77,
+			"name": "#2"
+		}, {
+			"size": 61,
+			"name": "#3"
+		}, {
+			"size": 65,
+			"name": "#4"
+		}, {
+			"size": 84,
+			"name": "#5"
+		}],
+		"name": "TYPE"
+	}, {
+		"total_occurences": 679,
+		"children": [{
+			"size": 56,
+			"name": "#1"
+		}, {
+			"size": 460,
+			"name": "#2"
+		}, {
+			"size": 77,
+			"name": "#3"
+		}, {
+			"size": 41,
+			"name": "#4"
+		}, {
+			"size": 46,
+			"name": "#5"
+		}],
+		"name": "HEIGHT"
+	}, {
+		"total_occurences": 675,
+		"children": [{
+			"size": 16,
+			"name": "#1"
+		}, {
+			"size": 65,
+			"name": "#2"
+		}, {
+			"size": 237,
+			"name": "#3"
+		}, {
+			"size": 190,
+			"name": "#4"
+		}, {
+			"size": 168,
+			"name": "#5"
+		}],
+		"name": "DATASET"
+	}, {
+		"total_occurences": 604,
+		"children": [{
+			"size": 131,
+			"name": "#1"
+		}, {
+			"size": 141,
+			"name": "#2"
+		}, {
+			"size": 128,
+			"name": "#3"
+		}, {
+			"size": 108,
+			"name": "#4"
+		}, {
+			"size": 97,
+			"name": "#5"
+		}],
+		"name": "FORECAST"
+	}, {
+		"total_occurences": 599,
+		"children": [{
+			"size": 63,
+			"name": "#1"
+		}, {
+			"size": 41,
+			"name": "#2"
+		}, {
+			"size": 56,
+			"name": "#3"
+		}, {
+			"size": 382,
+			"name": "#4"
+		}, {
+			"size": 58,
+			"name": "#5"
+		}],
+		"name": "NAME"
+	}, {
+		"total_occurences": 570,
+		"children": [{
+			"size": 6,
+			"name": "#1"
+		}, {
+			"size": 24,
+			"name": "#2"
+		}, {
+			"size": 412,
+			"name": "#3"
+		}, {
+			"size": 89,
+			"name": "#4"
+		}, {
+			"size": 40,
+			"name": "#5"
+		}],
+		"name": "INPUT"
+	}, {
+		"total_occurences": 568,
+		"children": [{
+			"size": 203,
+			"name": "#1"
+		}, {
+			"size": 133,
+			"name": "#2"
+		}, {
+			"size": 70,
+			"name": "#3"
+		}, {
+			"size": 94,
+			"name": "#4"
+		}, {
+			"size": 69,
+			"name": "#5"
+		}],
+		"name": "RESEARCH"
+	}, {
+		"total_occurences": 558,
+		"children": [{
+			"size": 40,
+			"name": "#1"
+		}, {
+			"size": 25,
+			"name": "#2"
+		}, {
+			"size": 37,
+			"name": "#3"
+		}, {
+			"size": 46,
+			"name": "#4"
+		}, {
+			"size": 411,
+			"name": "#5"
+		}],
+		"name": "VALUE"
+	}, {
+		"total_occurences": 549,
+		"children": [{
+			"size": 103,
+			"name": "#1"
+		}, {
+			"size": 118,
+			"name": "#2"
+		}, {
+			"size": 109,
+			"name": "#3"
+		}, {
+			"size": 112,
+			"name": "#4"
+		}, {
+			"size": 108,
+			"name": "#5"
+		}],
+		"name": "TIME"
+	}, {
+		"total_occurences": 507,
+		"children": [{
+			"size": 40,
+			"name": "#1"
+		}, {
+			"size": 47,
+			"name": "#2"
+		}, {
+			"size": 138,
+			"name": "#3"
+		}, {
+			"size": 145,
+			"name": "#4"
+		}, {
+			"size": 138,
+			"name": "#5"
+		}],
+		"name": "MAP"
+	}, {
+		"total_occurences": 506,
+		"children": [{
+			"size": 165,
+			"name": "#1"
+		}, {
+			"size": 106,
+			"name": "#2"
+		}, {
+			"size": 82,
+			"name": "#3"
+		}, {
+			"size": 70,
+			"name": "#4"
+		}, {
+			"size": 84,
+			"name": "#5"
+		}],
+		"name": "DAY"
+	}, {
+		"total_occurences": 490,
+		"children": [{
+			"size": 67,
+			"name": "#1"
+		}, {
+			"size": 37,
+			"name": "#2"
+		}, {
+			"size": 184,
+			"name": "#3"
+		}, {
+			"size": 76,
+			"name": "#4"
+		}, {
+			"size": 127,
+			"name": "#5"
+		}],
+		"name": "FORMAT"
+	}, {
+		"total_occurences": 486,
+		"children": [{
+			"size": 17,
+			"name": "#1"
+		}, {
+			"size": 39,
+			"name": "#2"
+		}, {
+			"size": 35,
+			"name": "#3"
+		}, {
+			"size": 328,
+			"name": "#4"
+		}, {
+			"size": 68,
+			"name": "#5"
+		}],
+		"name": "CORE"
+	}, {
+		"total_occurences": 477,
+		"children": [{
+			"size": 103,
+			"name": "#1"
+		}, {
+			"size": 61,
+			"name": "#2"
+		}, {
+			"size": 73,
+			"name": "#3"
+		}, {
+			"size": 200,
+			"name": "#4"
+		}, {
+			"size": 41,
+			"name": "#5"
+		}],
+		"name": "HUMAN"
+	}, {
+		"total_occurences": 467,
+		"children": [{
+			"size": 28,
+			"name": "#1"
+		}, {
+			"size": 37,
+			"name": "#2"
+		}, {
+			"size": 73,
+			"name": "#3"
+		}, {
+			"size": 122,
+			"name": "#4"
+		}, {
+			"size": 208,
+			"name": "#5"
+		}],
+		"name": "PHONE"
+	}, {
+		"total_occurences": 458,
+		"children": [{
+			"size": 71,
+			"name": "#1"
+		}, {
+			"size": 80,
+			"name": "#2"
+		}, {
+			"size": 139,
+			"name": "#3"
+		}, {
+			"size": 75,
+			"name": "#4"
+		}, {
+			"size": 94,
+			"name": "#5"
+		}],
+		"name": "PROJECT"
+	}, {
+		"total_occurences": 448,
+		"children": [{
+			"size": 64,
+			"name": "#1"
+		}, {
+			"size": 93,
+			"name": "#2"
+		}, {
+			"size": 68,
+			"name": "#3"
+		}, {
+			"size": 97,
+			"name": "#4"
+		}, {
+			"size": 127,
+			"name": "#5"
+		}],
+		"name": "POLICY"
+	}, {
+		"total_occurences": 446,
+		"children": [{
+			"size": 52,
+			"name": "#1"
+		}, {
+			"size": 34,
+			"name": "#2"
+		}, {
+			"size": 69,
+			"name": "#3"
+		}, {
+			"size": 141,
+			"name": "#4"
+		}, {
+			"size": 151,
+			"name": "#5"
+		}],
+		"name": "REGION"
+	}, {
+		"total_occurences": 442,
+		"children": [{
+			"size": 89,
+			"name": "#1"
+		}, {
+			"size": 52,
+			"name": "#2"
+		}, {
+			"size": 98,
+			"name": "#3"
+		}, {
+			"size": 90,
+			"name": "#4"
+		}, {
+			"size": 114,
+			"name": "#5"
+		}],
+		"name": "ROLE"
+	}, {
+		"total_occurences": 441,
+		"children": [{
+			"size": 47,
+			"name": "#1"
+		}, {
+			"size": 190,
+			"name": "#2"
+		}, {
+			"size": 105,
+			"name": "#3"
+		}, {
+			"size": 39,
+			"name": "#4"
+		}, {
+			"size": 61,
+			"name": "#5"
+		}],
+		"name": "RADIATION"
+	}, {
+		"total_occurences": 439,
+		"children": [{
+			"size": 81,
+			"name": "#1"
+		}, {
+			"size": 89,
+			"name": "#2"
+		}, {
+			"size": 92,
+			"name": "#3"
+		}, {
+			"size": 99,
+			"name": "#4"
+		}, {
+			"size": 79,
+			"name": "#5"
+		}],
+		"name": "WORK"
+	}, {
+		"total_occurences": 418,
+		"children": [{
+			"size": 38,
+			"name": "#1"
+		}, {
+			"size": 149,
+			"name": "#2"
+		}, {
+			"size": 131,
+			"name": "#3"
+		}, {
+			"size": 60,
+			"name": "#4"
+		}, {
+			"size": 41,
+			"name": "#5"
+		}],
+		"name": "SNOW"
+	}, {
+		"total_occurences": 412,
+		"children": [{
+			"size": 63,
+			"name": "#1"
+		}, {
+			"size": 59,
+			"name": "#2"
+		}, {
+			"size": 72,
+			"name": "#3"
+		}, {
+			"size": 88,
+			"name": "#4"
+		}, {
+			"size": 131,
+			"name": "#5"
+		}],
+		"name": "ACCESS"
+	}, {
+		"total_occurences": 399,
+		"children": [{
+			"size": 29,
+			"name": "#1"
+		}, {
+			"size": 193,
+			"name": "#2"
+		}, {
+			"size": 57,
+			"name": "#3"
+		}, {
+			"size": 82,
+			"name": "#4"
+		}, {
+			"size": 39,
+			"name": "#5"
+		}],
+		"name": "CRYOSPHERE"
+	}, {
+		"total_occurences": 378,
+		"children": [{
+			"size": 27,
+			"name": "#1"
+		}, {
+			"size": 107,
+			"name": "#2"
+		}, {
+			"size": 98,
+			"name": "#3"
+		}, {
+			"size": 39,
+			"name": "#4"
+		}, {
+			"size": 108,
+			"name": "#5"
+		}],
+		"name": "CHEMISTRY"
+	}, {
+		"total_occurences": 376,
+		"children": [{
+			"size": 54,
+			"name": "#1"
+		}, {
+			"size": 64,
+			"name": "#2"
+		}, {
+			"size": 94,
+			"name": "#3"
+		}, {
+			"size": 75,
+			"name": "#4"
+		}, {
+			"size": 90,
+			"name": "#5"
+		}],
+		"name": "DESCRIPTION"
+	}, {
+		"total_occurences": 373,
+		"children": [{
+			"size": 3,
+			"name": "#1"
+		}, {
+			"size": 333,
+			"name": "#2"
+		}, {
+			"size": 12,
+			"name": "#3"
+		}, {
+			"size": 19,
+			"name": "#4"
+		}, {
+			"size": 7,
+			"name": "#5"
+		}],
+		"name": "VARIABILITY"
+	}, {
+		"total_occurences": 371,
+		"children": [{
+			"size": 16,
+			"name": "#1"
+		}, {
+			"size": 39,
+			"name": "#2"
+		}, {
+			"size": 207,
+			"name": "#3"
+		}, {
+			"size": 82,
+			"name": "#4"
+		}, {
+			"size": 28,
+			"name": "#5"
+		}],
+		"name": "AGRICULTURE"
+	}, {
+		"total_occurences": 371,
+		"children": [{
+			"size": 79,
+			"name": "#1"
+		}, {
+			"size": 38,
+			"name": "#2"
+		}, {
+			"size": 74,
+			"name": "#3"
+		}, {
+			"size": 71,
+			"name": "#4"
+		}, {
+			"size": 110,
+			"name": "#5"
+		}],
+		"name": "HYDROSPHERE"
+	}, {
+		"total_occurences": 343,
+		"children": [{
+			"size": 109,
+			"name": "#1"
+		}, {
+			"size": 78,
+			"name": "#2"
+		}, {
+			"size": 43,
+			"name": "#3"
+		}, {
+			"size": 47,
+			"name": "#4"
+		}, {
+			"size": 67,
+			"name": "#5"
+		}],
+		"name": "CLASSIFICATION"
+	}, {
+		"total_occurences": 340,
+		"children": [{
+			"size": 29,
+			"name": "#1"
+		}, {
+			"size": 53,
+			"name": "#2"
+		}, {
+			"size": 56,
+			"name": "#3"
+		}, {
+			"size": 130,
+			"name": "#4"
+		}, {
+			"size": 73,
+			"name": "#5"
+		}],
+		"name": "ANALYSIS"
+	}, {
+		"total_occurences": 339,
+		"children": [{
+			"size": 43,
+			"name": "#1"
+		}, {
+			"size": 86,
+			"name": "#2"
+		}, {
+			"size": 74,
+			"name": "#3"
+		}, {
+			"size": 84,
+			"name": "#4"
+		}, {
+			"size": 53,
+			"name": "#5"
+		}],
+		"name": "PRECIPITATION"
+	}, {
+		"total_occurences": 324,
+		"children": [{
+			"size": 27,
+			"name": "#1"
+		}, {
+			"size": 53,
+			"name": "#2"
+		}, {
+			"size": 73,
+			"name": "#3"
+		}, {
+			"size": 116,
+			"name": "#4"
+		}, {
+			"size": 56,
+			"name": "#5"
+		}],
+		"name": "INDEX"
+	}, {
+		"total_occurences": 322,
+		"children": [{
+			"size": 122,
+			"name": "#1"
+		}, {
+			"size": 60,
+			"name": "#2"
+		}, {
+			"size": 50,
+			"name": "#3"
+		}, {
+			"size": 35,
+			"name": "#4"
+		}, {
+			"size": 56,
+			"name": "#5"
+		}],
+		"name": "TOP"
+	}, {
+		"total_occurences": 315,
+		"children": [{
+			"size": 50,
+			"name": "#1"
+		}, {
+			"size": 70,
+			"name": "#2"
+		}, {
+			"size": 55,
+			"name": "#3"
+		}, {
+			"size": 65,
+			"name": "#4"
+		}, {
+			"size": 76,
+			"name": "#5"
+		}],
+		"name": "SOIL"
+	}]
 }
