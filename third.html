@@ -4,6 +4,60 @@
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
         <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css" />
         <link rel="stylesheet" href="css/styles.css">
+        <style>
+            body {
+              font: 12px sans-serif;
+            }
+
+            .axis path,
+            .axis line {
+              fill: none;
+              stroke: #000;
+              shape-rendering: crispEdges;
+            }
+
+            .bar {
+              fill: orange;
+            }
+
+            .bar:hover {
+              fill: orangered ;
+            }
+
+            .x.axis path {
+              display: none;
+            }
+
+            .d3-tip {
+              line-height: 1;
+              font-weight: bold;
+              padding: 12px;
+              background: rgba(0, 0, 0, 0.8);
+              color: #fff;
+              border-radius: 2px;
+            }
+
+            /* Creates a small triangle extender for the tooltip */
+            .d3-tip:after {
+              box-sizing: border-box;
+              display: inline;
+              font-size: 10px;
+              width: 100%;
+              line-height: 1;
+              color: rgba(0, 0, 0, 0.8);
+              content: "\25BC";
+              position: absolute;
+              text-align: center;
+            }
+
+            /* Style northward tooltips differently */
+            .d3-tip.n:after {
+              margin: -1px 0 0 0;
+              top: 100%;
+              left: 0;
+            }
+
+        </style>
     </head>
     <body>
         <nav class="navbar navbar-default">
@@ -14,15 +68,20 @@
                 <ul class="nav navbar-nav">
                     <li><a href="./index.html">Viz 1</a></li>
                     <li><a href="./second.html">Word Cloud</a></li>
-                    <li class="active"><a href="./third.html">Viz 3</a></li>
-                    <li><a href="./fourth.html">Viz 4</a></li>
+                    <li class="active"><a href="./third.html">Bar Chart</a></li>
+                    <li><a href="./fourth.html">Dashboard</a></li>
                     <li><a href="./fifth.html">Viz 5</a></li>
                     <li><a href="./sixth.html">Viz 6</a></li>
                 </ul>
             </div>
         </nav>
+        
+        
 <!--        Bootstrap and jQuery inclusion-->
-  <script src="js/angular.min.js"></script>
+  <script src="js/jquery-2.2.2.min.js"></script>
    <script src="bootstrap/js/bootstrap.min.js"></script>
+   <script src="js/d3.v3.min.js" ></script>
+   <script src="js/d3.tip.v0.6.3.js"></script>
+   <script src="js/bar_chart.js"></script>
     </body>
 </html>
