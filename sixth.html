@@ -1,11 +1,37 @@
+
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Metadata Extraction And Analysis</title>
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
         <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css" />
         <link rel="stylesheet" href="css/styles.css">
-    </head>
-    <body>
+    <style type="text/css">
+
+
+.node circle {
+  cursor: pointer;
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font-size: 11px;
+}
+
+path.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="body">
+      
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                <div class="navbar-header">
@@ -13,16 +39,22 @@
                </div>
                 <ul class="nav navbar-nav">
                     <li><a href="./index.html">Viz 1</a></li>
-                    <li><a href="./second.html">Word Cloud</a></li>
+                    <li ><a href="./second.html">Word Cloud</a></li>
                     <li><a href="./third.html">Bar Chart</a></li>
                     <li><a href="./fourth.html">Dashboard</a></li>
                     <li><a href="./fifth.html">Heirarchical Bar</a></li>
-                    <li class="active"><a href="./sixth.html">Viz 6</a></li>
+                     <li class="active" ><a href="./sixth.html">Collapsed Tree</a></li>
                 </ul>
             </div>
         </nav>
-<!--        Bootstrap and jQuery inclusion-->
-  <script src="js/angular.min.js"></script>
-   <script src="bootstrap/js/bootstrap.min.js"></script>
-    </body>
+        <div id="footer">
+        <div class="hint">Click on the Author to view his/her related publications</div>
+      </div>
+    </div>
+
+  <script src="js/d3.v3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/d3.layout.js"></script>
+    <script type="text/javascript" src="js/tree.js"></script>
+
+  </body>
 </html>
