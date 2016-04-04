@@ -1,43 +1,22 @@
-<html>
-    <head>
-        <title>Metadata Extraction And Analysis</title>
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+<style>
+
+text {
+  font: 10px sans-serif;
+}
+
+</style>
+ 
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
         <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css" />
         <link rel="stylesheet" href="css/styles.css">
-        <style>
-            
-            path {  stroke: #fff; }
-            path:hover {  opacity:0.9; }
-            rect:hover {  fill:blue; }
-            .axis {  font: 10px sans-serif; }
-            .legend tr{    border-bottom:1px solid grey; }
-            .legend tr:first-child{    border-top:1px solid grey; }
-
-            .axis path,
-            .axis line {
-              fill: none;
-              stroke: #000;
-              shape-rendering: crispEdges;
-            }
-
-            .x.axis path {  display: none; }
-            .legend{
-                margin-bottom:76px;
-                display:inline-block;
-                border-collapse: collapse;
-                border-spacing: 0px;
-            }
-            .legend td{
-                padding:4px 5px;
-                vertical-align:bottom;
-            }
-            .legendFreq, .legendPerc{
-                align:right;
-                width:50px;
-            }
-        </style>
-    </head>
-    <body>
+</head>
+<body>
+<div id="body">
+      
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                <div class="navbar-header">
@@ -45,20 +24,17 @@
                </div>
                 <ul class="nav navbar-nav">
                     <li><a href="./index.html">Viz 1</a></li>
-                    <li><a href="./second.html">Word Cloud</a></li>
+                    <li ><a href="./second.html">Word Cloud</a></li>
                     <li><a href="./third.html">Bar Chart</a></li>
-                    <li class="active"><a href="./fourth.html">Dashboard</a></li>
+                    <li class="active" ><a href="./fourth.html">Bubblechart</a></li>
                     <li><a href="./fifth.html">Heirarchical Bar</a></li>
-                    <li><a href="./sixth.html">Collapsed Tree</a></li>
+                     <li  ><a href="./sixth.html">Collapsed Tree</a></li>
                 </ul>
             </div>
         </nav>
-        
-        <div id="dashboard"></div>
-<!--        Bootstrap and jQuery inclusion-->
-  <script src="js/d3.v3.min.js"></script>
-  <script src="js/dashboard.js"></script>
-  <script src="js/jquery-2.2.2.min.js"></script>
-   <script src="bootstrap/js/bootstrap.min.js"></script>
-    </body>
-</html>
+    </div>
+
+
+<script src="js/d3.v3.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/bubblechart.js"></script>
+</body>
