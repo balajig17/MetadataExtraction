@@ -1,6 +1,6 @@
 
-var width = 600,
-    height = 600,
+var width = 800,
+    height = 800,
     radius = Math.min(width-10, height-10) / 2;
 
 var color = d3.scale.category20()
