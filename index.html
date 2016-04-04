@@ -4,7 +4,54 @@
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
         <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css" />
         <link rel="stylesheet" href="css/styles.css">
+    <style>
+                .arc text {
+          font: 10px sans-serif;
+          text-anchor: middle;
+        }
+
+        .arc path {
+          stroke: #fff;
+        }
+
+        text {
+            font-family: sans-serif;
+            font-size: 12px;
+            fill: white;
+        }
+        
+
+        .axis path,
+        .axis line {
+          fill: none;
+          stroke: #000;
+          shape-rendering: crispEdges;
+        }
+
+        .bar:hover {
+          fill: orangered ;
+        }
+
+        .x.axis path {
+          display: none;
+        }
+
+        .d3-tip {
+          line-height: 2;
+          font-weight: bold;
+          position:50px,50px;
+          padding: 12px;
+          background: rgba(0, 0, 0, 0.8);
+          color: #fff;
+          border-radius: 2px;
+        }
+
+
+    </style>
+
+
     </head>
+
     <body>
         <nav class="navbar navbar-default">
             <div class="container-fluid">
@@ -12,17 +59,22 @@
                    <a class="navbar-brand" href="./index.html">Polar Data Analysis</a>
                </div>
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="./index.html">Viz 1</a></li>
-                    <li><a href="./second.html">Word Cloud</a></li>
-                    <li><a href="./third.html">Bar Chart</a></li>
-                    <li><a href="./fourth.html">Bubblechart</a></li>
-                    <li><a href="./fifth.html">Heirarchical Bar</a></li>
-                    <li><a href="./sixth.html">Collapsed Tree</a></li>
+                    <li class="active"><a href="./index.html">File types</a></li>
+                    <li><a href="./second.html">Most used SWEET Words in Dataset</a></li>
+                    <li ><a href="./third.html">Related Publications by Year</a></li>
+                    <li><a href="./fourth.html">Authors with most related Publications</a></li>
+                    <li><a href="./fifth.html">SWEET detailed occurence Chart</a></li>
+                    <li><a href="./sixth.html">Related publications by author</a></li>
                 </ul>
             </div>
+
         </nav>
+         <h6>Mime types that are indexed</h6>
 <!--        Bootstrap and jQuery inclusion-->
   <script src="js/angular.min.js"></script>
+    <script src="js/d3.v3.min.js" charset="utf-8"></script>
    <script src="bootstrap/js/bootstrap.min.js"></script>
+   <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+   <script src="js/pie.js" charset="utf-8"></script>
     </body>
 </html>

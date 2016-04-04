@@ -9,7 +9,7 @@ d3.json("data/wordcloud.json",function(error,responseWords)
 {
 
  layout= d3.layout.cloud()
-    .size([1000, 1000])
+    .size([2000, 2000])
     .words(responseWords)
     .padding(5)
     .rotate(function() { return ~~(Math.random() * 2) * 90; })
